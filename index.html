@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Bootstrap v5 with Sass</title>
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/fontawesome.css" />
+    <link rel="stylesheet" href="dist/vendors/css/glightbox.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="Logo image" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button type="button" class="rounded-pill btn-rounded">
+            +91 8921917807
+            <span>
+              <i class="fas fa-phone-alt"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- INTRO SECTION -->
+
+    <section id="home" class="intro-section">
+      <div class="container">
+        <div class="row align-items-center text-white">
+          <!-- INTRO -->
+          <div class="col-md-6 intros">
+            <h1 class="display-2">
+              <span class="display-2--intro">Hey!, I'm Shana</span>
+              <span class="display-2--description lh-base"
+                >Frontend Developer with 2+ years of experience in the IT
+                industry.</span
+              >
+            </h1>
+            <button type="button" class="rounded-pill btn-rounded">
+              Get in touch
+              <span>
+                <i class="fas fa-arrow-up"></i>
+              </span>
+            </button>
+          </div>
+          <!-- INTRO VIDEO -->
+          <div class="col-md-6 intros text-end">
+            <div class="video-box">
+              <img
+                src="images/arts/intro-illustration.png"
+                alt="video illustration"
+                class="img-fluid"
+              />
+              <a
+                href="#"
+                class="glightbox position-absolute top-50 start-50 translate-middle"
+              >
+                <span>
+                  <i class="fas fa-play-circle"></i>
+                </span>
+                <span
+                  class="border-animation border-animation--border-1"
+                ></span>
+                <span
+                  class="border-animation border-animation--border-2"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,288L48,250.7C96,213,192,139,288,133.3C384,128,480,192,576,218.7C672,245,768,235,864,197.3C960,160,1056,96,1152,85.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- COMPANIES SECTION -->
+    <section id="companies" class="companies">
+      <div class="container">
+        <div class="row text-center">
+          <h4 class="fw-bold lead mb-3">Interested in companies like</h4>
+          <div class="heading-line mb-5"></div>
+        </div>
+      </div>
+      <!-- COMPANIES LOGO -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/company-1.png"
+                alt="Company 1 Logo"
+                title="Company 1 Logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/company-2.png"
+                alt="Company 2 Logo"
+                title="Company 2 Logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/company-3.png"
+                alt="Company 3 Logo"
+                title="Company 3 Logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/company-4.png"
+                alt="Company 4 Logo"
+                title="Company 4 Logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/company-5.png"
+                alt="Company 5 Logo"
+                title="Company 5 Logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/company-6.png"
+                alt="Company 6 Logo"
+                title="Company 6 Logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold">Services</h1>
+          <div class="heading-line mb-1"></div>
+        </div>
+
+        <!-- DESCRIPTION CONTENT -->
+
+        <div class="row pt-2 pb-2 mt-0 mb-3">
+          <div class="col-md-6 border-right">
+            <div class="bg-white p-3">
+              <h2 class="fw-bold text-capitalize text-center">
+                Services range from initial design to deployment anywhere
+                anytime
+              </h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-white p-4 text-start">
+              <p class="fw-light">
+                As a Frontend Developer, I thrive on transforming ideas into
+                interactive and user-friendly web experiences. With expertise in
+                React, JavaScript, HTML5, and SASS/CSS3, I specialize in
+                building scalable and responsive applications that enhance user
+                engagement. Skilled in using modern AI tools like ChatGPT to
+                assist code development and productivity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVICES CONTENT -->
+      <div class="container">
+        <!-- WEB DESIGNING -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <div class="icon d-block fas fa-code"></div>
+              <h3 class="display-3--title mt-1">Web Designing</h3>
+              <p class="lh-lg">
+                I create clean, modern, and user-friendly website designs that
+                focus on visual appeal, usability, and branding to ensure a
+                seamless and engaging experience for every visitor across all
+                devices.
+              </p>
+              <button
+                type="button"
+                class="rounded-pill btn-rounded border-primary"
+              >
+                Learn more
+                <span>
+                  <i class="fas fa-arrow-up"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
+          >
+            <div class="services__pic">
+              <img
+                src="images/services/web-designing.png"
+                alt="web designing illustration"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- WEB DEVELOPMENT -->
+        <div class="row">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start"
+          >
+            <div class="services__pic">
+              <img
+                src="images/services/web-development.png"
+                alt="web development illustration"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <div class="icon d-block fas fa-code-commit"></div>
+              <h3 class="display-3--title mt-1">Web Development</h3>
+              <p class="lh-lg">
+                I develop fully responsive, high-performing websites using
+                modern technologies that ensure fast load times, cross-browser
+                compatibility, clean code, and smooth interactions tailored to
+                client needs and user behavior.
+              </p>
+              <button
+                type="button"
+                class="rounded-pill btn-rounded border-primary"
+              >
+                Learn more
+                <span>
+                  <i class="fas fa-arrow-up"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- CONTENT CREATION -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <div class="icon d-block fa-brands fa-figma"></div>
+              <h3 class="display-3--title mt-1">Content Creation</h3>
+              <p class="lh-lg">
+                I craft engaging and meaningful content that communicates your
+                message clearly, boosts brand visibility, connects with your
+                audience, and enhances your online presence through creativity,
+                clarity, and consistency.
+              </p>
+              <button
+                type="button"
+                class="rounded-pill btn-rounded border-primary"
+              >
+                Learn more
+                <span>
+                  <i class="fas fa-arrow-up"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
+          >
+            <div class="services__pic">
+              <img
+                src="images/services/content-creation.png"
+                alt="content creation illustration"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="testimonials" class="testimonials">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,32L34.3,69.3C68.6,107,137,181,206,186.7C274.3,192,343,128,411,101.3C480,75,549,85,617,106.7C685.7,128,754,160,823,149.3C891.4,139,960,85,1029,74.7C1097.1,64,1166,96,1234,138.7C1302.9,181,1371,235,1406,261.3L1440,288L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container">
+        <div class="row text-center text-white">
+          <h1 class="display-3 fw-bold">Projects</h1>
+          <hr style="width: 100px; height: 3px" class="mx-auto" />
+          <p class="lead pt-1">my portfolio projects</p>
+        </div>
+
+        <!-- CAROUSEL -->
+        <div class="row align-items-center">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner">
+              <!-- CAROUSEL ITEM 1 -->
+              <div class="carousel-item active">
+                <!-- TESTIMONIAL CARD -->
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    Designed and developed a fully responsive portfolio website
+                    using <em class="text-primary fw-bold">HTML5</em> and
+                    <em class="text-primary fw-bold">CSS3 </em>to showcase web
+                    development projects. Implemented an interactive and
+                    user-friendly UI with smooth animations and modern design
+                    principles. Ensured a
+                    <strong class="text-secondary">mobile-friendly</strong>
+                    design with custom CSS media queries for seamless
+                    adaptability across devices.
+                  </p>
+                </div>
+                <!-- CLIENT PICTURE -->
+                <div class="testimonials__pic">
+                  <img
+                    src="images/projects/tacos.jpg"
+                    alt="Project 1"
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <!-- CLIENT NAME & ROLE -->
+                <div class="testimonials__name">
+                  <h3>Little Taco Shop</h3>
+                  <p class="fw-light">
+                    <a class="text-white" href="ltsin.netlify.app"
+                      >ltsin.netlify.app</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <!-- CAROUSEL ITEM 2 -->
+              <div class="carousel-item">
+                <!-- TESTIMONIAL CARD -->
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    Developed a responsive dashboard using
+                    <em class="text-primary fw-bold">HTML5</em>,
+                    <em class="text-primary fw-bold">SASS/CSS</em> and
+                    <em class="text-primary fw-bold">JavaScript</em> that allows
+                    users to toggle between light and dark themes for a seamless
+                    user experience. Key features are
+                    <strong class="text-secondary"
+                      >Light/Dark theme toggle</strong
+                    >, clean and responsive UI, stats overview for multiple
+                    platforms.
+                  </p>
+                </div>
+                <!-- CLIENT PICTURE -->
+                <div class="testimonials__pic">
+                  <img
+                    src="images/projects/social-media.jpg"
+                    alt="Project 2"
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <!-- CLIENT NAME & ROLE -->
+                <div class="testimonials__name">
+                  <h3>Social Media Dashboard with Theme Switcher</h3>
+                  <p class="fw-light">
+                    <a class="text-white" href="ysm-dashboard.netlify.app"
+                      >ysm-dashboard.netlify.app</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <!-- CAROUSEL ITEM 3 -->
+              <div class="carousel-item">
+                <!-- TESTIMONIAL CARD -->
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    Developed a fully responsive To-Do List web app using
+                    <em class="text-primary fw-bold">HTML5</em>,
+                    <em class="text-primary fw-bold">SASS/CSS3</em> and
+                    <em class="text-primary fw-bold">Vanilla JavaScript</em>
+                    with a mobile-first approach. Key features are
+                    <strong class="text-secondary">Responsive Web Design</strong
+                    >,
+                    <strong class="text-secondary"
+                      >Accessibility support</strong
+                    >
+                    (keyboard navigation + screen reader-friendly), Persistent
+                    data using
+                    <strong class="text-secondary">Web Storage API</strong> and
+                    simple clean UI.
+                  </p>
+                </div>
+                <!-- CLIENT PICTURE -->
+                <div class="testimonials__pic">
+                  <img
+                    src="images/projects/todo.jpg"
+                    alt="Project 3"
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <!-- CLIENT NAME & ROLE -->
+                <div class="testimonials__name">
+                  <h3>To-Do-List Web App</h3>
+                  <p class="fw-light">
+                    <a class="text-white" href="todo-tada.netlify.app"
+                      >todo-tada.netlify.app</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <!-- CAROUSEL ITEM 4 -->
+              <div class="carousel-item">
+                <!-- TESTIMONIAL CARD -->
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    A responsive personal website built using
+                    <em class="text-primary fw-bold">Bootstrap</em> and
+                    <em class="text-primary fw-bold">SASS</em>, showcasing my
+                    portfolio, skills, and services with a clean design, smooth
+                    navigation, and modular, maintainable code for easy updates.
+                  </p>
+                </div>
+                <!-- CLIENT PICTURE -->
+                <div class="testimonials__pic">
+                  <img
+                    src="images/projects/myprofile.jpg"
+                    alt="Project 4"
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <!-- CLIENT NAME & ROLE -->
+                <div class="testimonials__name">
+                  <h3>Personal Website</h3>
+                  <p class="fw-light">
+                    <a class="text-white" href="pw.netlify.app"
+                      >pw.netlify.app</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button
+              class="btn btn-outline-light fas fa-long-arrow-alt-left"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            ></button>
+            <button
+              class="btn btn-outline-light fas fa-long-arrow-alt-right"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,32L34.3,69.3C68.6,107,137,181,206,186.7C274.3,192,343,128,411,101.3C480,75,549,85,617,106.7C685.7,128,754,160,823,149.3C891.4,139,960,85,1029,74.7C1097.1,64,1166,96,1234,138.7C1302.9,181,1371,235,1406,261.3L1440,288L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold text-uppercase">faq</h1>
+          <div class="heading-line"></div>
+          <p class="lead">
+            frequently asked questions, get knowledge before hand
+          </p>
+        </div>
+
+        <!-- ACCORDION CONTENT -->
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <div class="accordion" id="accordionExample">
+              <!-- ACCORDION ITEM 1 -->
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    What technologies did you use to build this website?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    I built this website using
+                    <strong>Bootstrap</strong> for the layout and
+                    responsiveness, along with <strong>SASS</strong> for clean
+                    and organized styling. It’s designed to be fast,
+                    mobile-friendly, and easy to maintain.
+                  </div>
+                </div>
+              </div>
+              <!-- ACCORDION ITEM 2 -->
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Can I contact you for freelance or collaboration work?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Yes, absolutely! I’m open to freelance projects and
+                    collaborations. You can reach out via the contact form on
+                    this website or connect with me through my social media
+                    links.
+                  </div>
+                </div>
+              </div>
+              <!-- ACCORDION ITEM 3 -->
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Is your portfolio updated with your latest work?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Yes, I regularly update my portfolio to showcase recent
+                    projects and skills. Feel free to check back often to see
+                    what I’ve been working on!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AREA OF EXPERTISE -->
+
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row text-center mt-5">
+          <h1 class="display-3 fw-bold text-capitalize">Area of Expertise</h1>
+          <div class="heading-line"></div>
+          <p class="lead">Technical skills</p>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="row mt-5 mb-4 g-3 text-center">
+          <div class="col-md-12">
+            <button class="btn btn-outline-primary" type="button">All</button>
+            <button class="btn btn-outline-primary" type="button">
+              Websites
+            </button>
+            <button class="btn btn-outline-primary" type="button">
+              Design
+            </button>
+            <button class="btn btn-outline-primary" type="button">
+              Mockup
+            </button>
+          </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img
+                src="images/portfolio/HTML5.jpg"
+                alt="HTML5"
+                title="Hyper Text Markup Language"
+                class="img-fluid"
+              />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>HTML5</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img
+                src="images/portfolio/CSS3.jpg"
+                alt="CSS3"
+                title="Cascading Style Sheets"
+                class="img-fluid"
+              />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>CSS3</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img
+                src="images/portfolio/javascript.jpg"
+                alt="JavaScript"
+                title="JavaScript"
+                class="img-fluid"
+              />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>JavaScript</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img
+                src="images/portfolio/web-design.jpg"
+                alt="web designing"
+                title="Web Designing"
+                class="img-fluid"
+              />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>Web Designing</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img
+                src="images/portfolio/web-development.jpg"
+                alt="Web Development"
+                title="Web Development"
+                class="img-fluid"
+              />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>Web Development</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img
+                src="images/portfolio/npm.jpg"
+                alt="npm"
+                title="Node Package Manager"
+                class="img-fluid"
+              />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>npm</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img
+                src="images/portfolio/feature.jpg"
+                alt="Not a bug but a feature"
+                title="bug vs feature"
+                class="img-fluid"
+              />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>Bug fixes vs Feature implementation</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img
+                src="images/portfolio/my-code-works.jpg"
+                alt="my code works"
+                title="my code works"
+                class="img-fluid"
+              />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>Clean & Robust code</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img
+                src="images/portfolio/react.jpg"
+                alt="React"
+                title="React"
+                class="img-fluid"
+              />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>React</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img
+                src="images/portfolio/git.jpg"
+                alt="Git"
+                title="Git"
+                class="img-fluid"
+              />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>Git</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img
+                src="images/portfolio/github.jpg"
+                alt="GitHub"
+                title="GitHub"
+                class="img-fluid"
+              />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>GitHub</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img
+                src="images/portfolio/chatgpt.jpg"
+                alt="ChatGPT"
+                title="ChatGPT"
+                class="img-fluid"
+              />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>ChatGPT</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="get-started">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold text-capitalize">Get Started</h1>
+          <div class="heading-line"></div>
+          <p class="lh-lg">
+            Let’s connect — hire me for your next project or simply reach out
+            through the contact form. I’m excited to work with you!
+          </p>
+        </div>
+
+        <!-- CTA CONTENT -->
+        <div class="row text-white">
+          <div class="col-12 col-lg-6 gradient shadow p-3">
+            <div class="cta-info w-100">
+              <h4 class="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
+              <p class="lh-lg">
+                I’m committed to delivering high-quality work tailored to your
+                needs. Let’s collaborate and bring your ideas to life — your
+                satisfaction is my priority.
+              </p>
+              <h3 class="display-3--brief">What will be the next step?</h3>
+              <ul class="cta-info__list">
+                <li>We'll prepare the proposal</li>
+                <li>We'll discuss it together</li>
+                <li>Let's start the discussion</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 bg-white shadow p-3">
+            <div class="form w-100 pb-2">
+              <h4 class="display-3--title mb-5">Start your Project</h4>
+              <form action="#" class="row">
+                <div class="col-lg-6 col-md-6 mb-3">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    id="inputFirstName"
+                    class="shadow form-control form-control-lg"
+                  />
+                </div>
+                <div class="col-lg-6 col-md-6 mb-3">
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    id="inputLastName"
+                    class="shadow form-control form-control-lg"
+                  />
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    id="inputEmail"
+                    class="shadow form-control form-control-lg"
+                  />
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="8"
+                    class="shadow form-control form-control-lg"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <div class="text-center d-grid mt-1">
+                  <button
+                    type="button"
+                    class="btn btn-primary rounded-pill pt-3 pb-3"
+                  >
+                    Submit <i class="fas fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- MOBILE NUMBER -->
+          <div
+            class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex"
+          >
+            <div class="contact-box__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-phone-call"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+                />
+                <path d="M15 7a2 2 0 0 1 2 2" />
+                <path d="M15 3a6 6 0 0 1 6 6" />
+              </svg>
+            </div>
+            <div class="contact-box__info">
+              <a href="" class="contact-box__info--title">+91 8921917807</a>
+              <p class="contact-box__info--subtitle">Mon-Fri 9 AM - 6 PM</p>
+            </div>
+          </div>
+          <!-- EMAIL -->
+          <div
+            class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex"
+          >
+            <div class="contact-box__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-mail-opened"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 9l9 6l9 -6l-9 -6l-9 6" />
+                <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                <path d="M3 19l6 -6" />
+                <path d="M15 13l6 6" />
+              </svg>
+            </div>
+            <div class="contact-box__info">
+              <a
+                href="mailto:shanasherfudheen@gmail.com"
+                class="contact-box__info--title"
+                >shanasherfudheen@gmail.com</a
+              >
+              <p class="contact-box__info--subtitle">Online support</p>
+            </div>
+          </div>
+          <!-- LOCATION -->
+          <div
+            class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex"
+          >
+            <div class="contact-box__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-map-2"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5" />
+                <path d="M9 4v13" />
+                <path d="M15 7v5.5" />
+                <path
+                  d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z"
+                />
+                <path d="M19 18v.01" />
+              </svg>
+            </div>
+            <div class="contact-box__info">
+              <a href="" class="contact-box__info--title">Kerala, India</a>
+              <p class="contact-box__info--subtitle">670106, Kannur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SOCIAL MEDIA CONTENT -->
+      <div class="footer-sm" style="background-color: #212121">
+        <div class="container">
+          <div class="row py-4 text-center text-white">
+            <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+              connect with me on social media
+            </div>
+            <div class="col-lg-7 col-md-6">
+              <a href="facebook.com/shanasherfudheen"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="instagram.com/shanasherfudheen"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="linkedin.com/in/shanasherfudheen"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="github.com/shanasherfudheen"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMPANY INFO -->
+      <div class="container mt-5">
+        <div class="row text-white justify-content-center mt-3 pb-3">
+          <div class="col-12 col-sm-6 col-lg-6 mx-auto">
+            <h5 class="text-capitalize fw-bold">Shana Sherfudheen</h5>
+            <hr
+              class="bg-white d-inline-block mb-4"
+              style="width: 60px; height: 2px"
+            />
+            <p class="lh-lg">
+              Designed and developed with passion. Let's build something great
+              together — one line of code at a time.
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+            <h5 class="text-capitalize fw-bold">Websites</h5>
+            <hr
+              class="bg-white d-inline-block mb-4"
+              style="width: 60px; height: 2px"
+            />
+            <ul class="list-inline company-list">
+              <li><a href="https://ltsin.netlify.app/">LTS</a></li>
+              <li>
+                <a href="https://ysm-dashboard.netlify.app/"
+                  >Social Media Dashboard</a
+                >
+              </li>
+              <li><a href="https://todo-tada.netlify.app/">ToDo Web App</a></li>
+              <li>
+                <a href="https://sha-leads-tracker-app.netlify.app/"
+                  >Leads Tracker</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+            <h5 class="text-capitalize fw-bold">Useful Links</h5>
+            <hr
+              class="bg-white d-inline-block mb-4"
+              style="width: 60px; height: 2px"
+            />
+            <ul class="list-inline company-list">
+              <li><a href="#">Your account</a></li>
+              <li><a href="#">Create an account</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+            <h5 class="text-capitalize fw-bold">Contact</h5>
+            <hr
+              class="bg-white d-inline-block mb-4"
+              style="width: 60px; height: 2px"
+            />
+            <ul class="list-inline company-list">
+              <li>
+                <a href="https://shana-bcard.netlify.app/">Business Card</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="footer-bottom pt-5 pb-5">
+        <div class="container">
+          <div class="row text-center text-white">
+            <div class="col-12">
+              <div class="footer-bottom__copyright">
+                &COPY; Copyright 2025 | <a href="#home">SHANA SHERFUDHEEN</a> |
+                All Rights Reserved
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="shadow btn btn-primary rounded-circle back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="dist/vendors/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        href: "https://youtu.be/iJKCj8uAHz8?si=fg-sOQutmgJXVf17",
+        type: "video",
+        source: "youtube", //vimeo, youtube or local
+        width: 900,
+        autoplayVideos: true,
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
